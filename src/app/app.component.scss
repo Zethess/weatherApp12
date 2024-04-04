@@ -1,0 +1,135 @@
+.main-grid{
+  width: 100%;
+  max-width: 100%;
+  height: 100vh;
+  display: block;
+
+}
+@media only screen and (min-width:1330px){
+  .main-grid{
+    display: grid;
+    grid-template-columns: 960px 370px;
+    justify-content: center;
+    align-content: center;
+
+  }
+}
+.bg-main{
+  // background-color: gray;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: -2px 0px 15px rgb(226, 226, 226);
+  border-radius: 10px 0px 0px 10px;
+}
+.bg-green{
+  background-color: green;
+}
+.main-text{
+  font-size: 200px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+}
+.main-subtext{
+  text-align: center;
+  font-size: 40px;
+  align-self: center;
+  line-height: 40px;
+}
+.main-div-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 40px;
+}
+.shadow-main-div{
+  box-shadow: 2px 0px 15px rgb(226, 226, 226);
+  border-radius: 0px 10px 10px 0px;
+}
+@media only screen and (max-width:1330px){
+  .shadow-main-div-top{
+    display: flex;
+    align-items: center;
+    width: 700px;
+    margin: 0 auto;
+    gap: 20px;
+  }
+  .daily-info{
+    flex-wrap: wrap;
+    justify-content: center !important;
+    gap: 12px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+.shadow-main-div-top-first-paragraph{
+  padding-top: 10px !important;
+}
+.my-chart-style-container{
+  max-width: 350px;
+  width: 100%;
+  height: 150px;
+  margin: 0 auto 60px auto;
+}
+.my-chart-style{
+  max-width: 350px;
+  width: 100%;
+  height: 150px;
+}
+.hourly-info-content{
+  width: 77px;
+}
+.daily-info-content{
+  width: 100px;
+}
+@media only screen and (max-width:880px){
+
+  .actual-weather{
+    gap: 0px !important;
+  }
+}
+@media only screen and (max-width:810px){
+
+  .actual-weather{
+    align-items: center;
+    flex-direction: column;
+  }
+  .header-content{
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+  }
+  .main-img-order{
+    order: 2;
+  }
+  .shadow-main-div-top{
+    flex-direction: column;
+    width: auto;
+
+  }
+}
+@media only screen and (max-width:540px){
+
+
+  .header-content{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+
+  }
+  .header-content-paragraph{
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 20px;
+
+  }
+.upper-main-text{
+  flex-direction: column;
+}
+.main-div-right{
+  padding-top: 0px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+}
+}
